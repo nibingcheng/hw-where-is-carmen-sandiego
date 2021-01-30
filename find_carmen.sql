@@ -3,7 +3,7 @@
 -- so find the least populated country in Southern Europe, and we'll start looking for her there.
 
 select code from country where region = 'Southern Europe' order by population;
-Answer: Holy See
+Answer: VAT (Holy See)
 
 -- Clue #2: Now that we're here, we have insight that Carmen was seen attending language classes in
 -- this country's officially recognized language. Check our databases and find out what language is
@@ -40,7 +40,9 @@ Answer: Serra, Brazil
  -- the capital! Look up the country's capital, and get there pronto! Send us the name of where you're headed and we'll
  -- follow right behind you!
 
-
+select capital from country where code = 'BRA';  
+select * from city where id = 211;
+Answer: Brasilia  
 
 -- Clue #7: She knows we're on to her – her taxi dropped her off at the international airport, and she beat us to
  -- the boarding gates. We have one chance to catch her, we just have to know where she's heading and beat her to the
